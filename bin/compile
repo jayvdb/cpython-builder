@@ -33,10 +33,7 @@ else
   VIRTENV_VERSION=python$VERSION
 fi
 
-python -m virtualenv --version
-python -m pip install --upgrade "virtualenv<15"
-python -m virtualenv --version
-python -m pip install --upgrade --user "virtualenv<15"
+python -m pip install --user "virtualenv<15"
 python -m virtualenv --version
 
 python -m virtualenv --distribute --python=$INSTALL_DEST/$VERSION/bin/python \
