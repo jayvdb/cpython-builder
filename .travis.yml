@@ -17,6 +17,8 @@ install:
 - sudo git checkout master
 - sudo git pull
 - popd
+- python -m pip install "virtualenv==15.0.2"
+- python -m virtualenv --version
 
 before_script:
 - 'export INSTALL_DEST=${INSTALL_DEST:-/opt/python}'
