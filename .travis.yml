@@ -10,7 +10,6 @@ matrix:
 
 env:
   global:
-  - VERSION='3.6-dev'
   - ALIAS=nightly
 
 install:
