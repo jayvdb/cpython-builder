@@ -36,6 +36,8 @@ fi
 python -m virtualenv --distribute --python=$INSTALL_DEST/$VERSION/bin/python \
   $HOME/virtualenv/$VIRTENV_VERSION
 
+find $INSTALL_DEST/$VERSION/bin
+
 if [[ $ALIAS ]] ; then
   ln -s $HOME/virtualenv/$VIRTENV_VERSION $HOME/virtualenv/python$ALIAS
 fi
